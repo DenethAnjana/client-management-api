@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Clients Data</title>
+  </head>
+  <body onload="show()">
+    <header>
+      <nav>
+        <ul>
+          <li><a id="show" onclick="show()" href="#">Show list</a></li>
+          <li><a id="get" onclick="getPage()" href="#">Fetch data</a></li>
+          <li><a id="add" onclick="add()" href="#">Add client</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h4>Data Client</h4>
+      <p id="clientList"></p>
+      <input type="text" name="member" id="member" placeholder="Find Client"/>
+      <button type="button" name="search" id="search">SEARCH</button>
+      <p id="searchResult"></p>
+    </section>
+
+    <section>
+      <h4>Add Client</h4>
+      <input type="text" name="id" placeholder="id" />
+      <input type="text" name="name" placeholder="name" />
+      <input type="text" name="age" placeholder="age" />
+      <button type="button" name="add" id="add"></button>
+      <p id="addResult"></p>
+    </section>
+
+  <script src="resources/js/main.js" charset="utf-8"></script>
+  </body>
+</html>
