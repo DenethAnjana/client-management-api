@@ -42,17 +42,17 @@ document.getElementById('search').addEventListener('click', function() {
   }
 })
 
-// document.getElementById('add').addEventListener('click', function() {
-//   var id = document.getElementById('id').value;
-//   var name = document.getElementById('name').value;
-//   var age = document.getElementById('age').value;
-//   var newClient = { id: id, name: name, age: age };
-//
-//   var xhttp = new XMLHttpRequest();
-//   var jsonStr = JSON.parse(xhttp.responseText);
-//   jsonStr['clients'].push(newClient);
-//   jsonStr()
-//
-//   xhttp.open("POST", "data.json", true);
-//   xhttp.send();
-// })
+document.getElementById('add').addEventListener('click', function() {
+  var id = document.getElementById('id').value;
+  var name = document.getElementById('name').value;
+  var age = document.getElementById('age').value;
+  var newClient = { id: id, name: name, age: age };
+
+  var xhttp = new XMLHttpRequest();
+  var jsonStr = JSON.parse(xhttp.responseText);
+  jsonStr['clients'].push(newClient);
+  jsonStr = JSON.stringify(jsonStr);
+
+  xhttp.open("POST", "data.json", true);
+  xhttp.send(json);
+})
