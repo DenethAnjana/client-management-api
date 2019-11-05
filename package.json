@@ -1,7 +1,7 @@
 {
   "name": "belajar-dasar-api",
   "version": "1.0.0",
-  "description": "This is a simple API to show list of clients, add new clients, and find clients by id purely using json (without database).",
+  "description": "This is a simple API that implements showing an array of clients, store new clients, find clients by id, id validation purely using json (without database) and with mvc (kinda) structure.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
